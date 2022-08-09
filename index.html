@@ -11,15 +11,9 @@
   <body>
     <header class="header">
       <div class="wrapper">
-        <div class="header_wrapper">
+        <div class="header_content">
           <div class="header_logo">
-            <a href="/" class="header_logo-link">
-              <img
-                src="/img/svg/logo.svg"
-                alt="Netbook"
-                class="header_logo-pic"
-              />
-            </a>
+            <a href=""><img src="img/svg/logo.svg" alt="" /></a>
           </div>
           <nav class="header_nav">
             <ul class="header_list">
@@ -36,15 +30,18 @@
                 <a href="#" class="header_link">Events</a>
               </li>
             </ul>
-            <div class="search_login">
-              <input
-                type="text"
-                placeholder="Search here..."
-                class="searchbar"
-              />
-              <button class="login_btn">Log in</button>
-            </div>
           </nav>
+          <div class="search_login">
+            <input type="text" placeholder="Search here..." class="searchbar" />
+            <button class="login_btn">Log in</button>
+            <button class="signup_btn">SignUp</button>
+            <button class="user_logo" id="logout">Log Out</button>
+          </div>
+          <div class="burger_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
@@ -61,15 +58,23 @@
                 stay in touch with friends & family.
               </p>
               <div class="intro_two_btn">
-                <button class="button_one">About More</button>
+                <button
+                  href="#"
+                  class="button_one"
+                  onclick="document.getElementById('about_company').scrollIntoView()"
+                >
+                  About More
+                </button>
                 <button class="button_two">Invite Friend</button>
               </div>
             </div>
-            <img src="/img/svg/intro_img.svg" alt="" class="intro_img" />
+            <div class="intro_img_cont">
+              <img src="img/intro_img.png" alt="" class="intro_img" />
+            </div>
           </div>
         </div>
       </section>
-      <section class="about_company">
+      <section class="about_company" id="about_company">
         <div class="wrapper">
           <div class="about_company_content">
             <div class="about_company_text">
@@ -88,10 +93,10 @@
               </ul>
             </div>
             <div class="three_img">
-              <img src="/img/img-vid-prw.png" alt="" />
-              <div class="">
-                <img src="/img/img-comp-two.png" alt="" />
-                <img src="/img/img-comp-three.png" alt="" />
+              <img src="img/img-vid-prw.png" alt="" />
+              <div class="three_img_two">
+                <img src="img/img-comp-two.png" alt="" />
+                <img src="img/img-comp-three.png" alt="" />
               </div>
             </div>
           </div>
@@ -103,11 +108,11 @@
             <div class="rating">
               <div class="achiv_wrap">
                 <div class="row_img_text">
-                  <img src="/img/svg/star.svg" alt="" />
+                  <img src="img/svg/star.svg" alt="" />
                   <h3 class="rating_title">4.8 Rating</h3>
                 </div>
                 <div class="row_img_text_two">
-                  <img class="img_people" src="/img/svg/people.svg" alt="" />
+                  <img class="img_people" src="img/svg/people.svg" alt="" />
                   <h3 class="blue_txt">+836</h3>
                   <h3 class="img_name">Members</h3>
                 </div>
@@ -121,11 +126,11 @@
             <div class="awards">
               <div class="awards_wrap">
                 <div class="row_img_text">
-                  <img src="/img/svg/trophy.svg" alt="" />
+                  <img src="img/svg/trophy.svg" alt="" />
                   <h3 class="rating_title">Awards</h3>
                 </div>
                 <div class="row_img_text_two">
-                  <img src="/img/svg/awards.svg" alt="" class="awards_circle" />
+                  <img src="img/svg/awards.svg" alt="" class="awards_circle" />
                   <h3 class="best_of">
                     Best of
                     <h3 class="text_2021">2021</h3>
@@ -166,7 +171,7 @@
             </div>
             <div class="six_blocks">
               <div class="block">
-                <img src="/img/svg/members.svg" alt="" class="group_icon" />
+                <img src="img/svg/members.svg" alt="" class="group_icon" />
                 <div class="block_column">
                   <h2>Members, Friends</h2>
                   <p>
@@ -176,7 +181,7 @@
                 </div>
               </div>
               <div class="block">
-                <img src="/img/svg/groups.svg" alt="" class="group_icon" />
+                <img src="img/svg/groups.svg" alt="" class="group_icon" />
                 <div class="block_column">
                   <h2>Groups</h2>
                   <p>
@@ -186,7 +191,7 @@
                 </div>
               </div>
               <div class="block">
-                <img src="/img/svg/forum.svg" alt="" class="group_icon" />
+                <img src="img/svg/forum.svg" alt="" class="group_icon" />
                 <div class="block_column">
                   <h2>Forum</h2>
                   <p>
@@ -196,7 +201,7 @@
                 </div>
               </div>
               <div class="block">
-                <img src="/img/svg/module.svg" alt="" class="group_icon" />
+                <img src="img/svg/module.svg" alt="" class="group_icon" />
                 <div class="block_column">
                   <h2>Custom Module</h2>
                   <p>
@@ -206,7 +211,7 @@
                 </div>
               </div>
               <div class="block">
-                <img src="/img/svg/list.svg" alt="" class="group_icon" />
+                <img src="img/svg/list.svg" alt="" class="group_icon" />
                 <div class="block_column">
                   <h2>List Builder</h2>
                   <p>
@@ -216,7 +221,7 @@
                 </div>
               </div>
               <div class="block">
-                <img src="/img/svg/scroll.svg" alt="" class="group_icon" />
+                <img src="img/svg/scroll.svg" alt="" class="group_icon" />
                 <div class="block_column">
                   <h2>List Scroll Effects</h2>
                   <p>
@@ -245,26 +250,26 @@
             </div>
             <div class="team_cards">
               <div class="card_user">
-                <img src="/img/fahim.png" alt="" class="img_over" />
-                <img src="/img/fahim1.png" alt="" class="img_under" />
+                <img src="img/fahim.png" alt="" class="img_over" />
+                <img src="img/fahim1.png" alt="" class="img_under" />
                 <h3>Fahim Rahman</h3>
                 <p>@rahman</p>
               </div>
               <div class="card_user">
-                <img src="/img/fahim.png" alt="" class="img_over" />
-                <img src="/img/kazi1.png" alt="" class="img_under" />
+                <img src="img/fahim.png" alt="" class="img_over" />
+                <img src="img/kazi1.png" alt="" class="img_under" />
                 <h3>Kazi Rahman</h3>
                 <p>@Rahman</p>
               </div>
               <div class="card_user">
-                <img src="/img/fahim.png" alt="" class="img_over" />
-                <img src="/img/masterero.png" alt="" class="img_under" />
+                <img src="img/fahim.png" alt="" class="img_over" />
+                <img src="img/masterero.png" alt="" class="img_under" />
                 <h3>Masterero Ali</h3>
                 <p>@Master</p>
               </div>
               <div class="card_user">
-                <img src="/img/fahim.png" alt="" class="img_over" />
-                <img src="/img/alia.png" alt="" class="img_under" />
+                <img src="img/fahim.png" alt="" class="img_over" />
+                <img src="img/alia.png" alt="" class="img_under" />
                 <h3>Alia Karon</h3>
                 <p>@Alia</p>
               </div>
@@ -283,12 +288,12 @@
                 boot are you taking the piss posh loo brilliant.
               </p>
               <div class="stores">
-                <img src="/img/appstore.png" alt="" />
-                <img src="/img/playstore.png" alt="" />
+                <img src="img/appstore.png" alt="" />
+                <img src="img/playstore.png" alt="" />
               </div>
             </div>
             <div class="phone">
-              <img src="/img/phone.png" alt="" />
+              <img src="img/phone.png" alt="" />
             </div>
           </div>
         </div>
@@ -300,10 +305,10 @@
             <h2>Latest News</h2>
             <div class="photos_blog">
               <div class="photo_blok">
-                <img src="/img/blog_img_1.png" alt="" class="blog_img" />
+                <img src="img/blog_img_1.png" alt="" class="blog_img" />
                 <div>
                   <img
-                    src="/img/svg/orange_line.svg"
+                    src="img/svg/orange_line.svg"
                     alt=""
                     class="micro_line"
                   />
@@ -312,10 +317,10 @@
                 <a href="#">Continue Reading ></a>
               </div>
               <div class="photo_blok">
-                <img src="/img/blog_img_2.png" alt="" class="blog_img" />
+                <img src="img/blog_img_2.png" alt="" class="blog_img" />
                 <div>
                   <img
-                    src="/img/svg/orange_line.svg"
+                    src="img/svg/orange_line.svg"
                     alt=""
                     class="micro_line"
                   />
@@ -324,10 +329,10 @@
                 <a href="#">Continue Reading ></a>
               </div>
               <div class="photo_blok">
-                <img src="/img/blog_img_3.png" alt="" class="blog_img" />
+                <img src="img/blog_img_3.png" alt="" class="blog_img" />
                 <div>
                   <img
-                    src="/img/svg/orange_line.svg"
+                    src="img/svg/orange_line.svg"
                     alt=""
                     class="micro_line"
                   />
@@ -392,21 +397,64 @@
             <h4>Besnik Creative Agency.</h4>
             <div class="logo_footer">
               <img
-                src="/img/svg/logo_footer.svg"
+                src="img/svg/logo_footer.svg"
                 alt=""
                 class="logo_footer_img"
               />
               <h3>Netbook</h3>
             </div>
             <div>
-              <img src="/img/svg/twitter.svg" alt="" class="social_media" />
-              <img src="/img/svg/instagram.svg" alt="" class="social_media" />
-              <img src="/img/svg/facebook.svg" alt="" class="social_media" />
-              <img src="/img/svg/linkedin.svg" alt="" class="social_media" />
+              <img src="img/svg/twitter.svg" alt="" class="social_media" />
+              <img src="img/svg/instagram.svg" alt="" class="social_media" />
+              <img src="img/svg/facebook.svg" alt="" class="social_media" />
+              <img src="img/svg/linkedin.svg" alt="" class="social_media" />
             </div>
           </div>
         </div>
       </div>
     </footer>
+    <div class="login_form_cont">
+      <span class="cross" id="close_btn"></span>
+      <div class="login_form popup">
+        <h3>Login</h3>
+        <input
+          id="username"
+          class="user_info"
+          type="text"
+          placeholder="Username"
+        />
+        <input
+          id="password"
+          class="user_info"
+          type="password"
+          placeholder="Password"
+        />
+
+        <a href="#">Forgot password?</a>
+        <div class="login_signup">
+          <button id="login_btn">Login</button>
+        </div>
+        <h4 id="error_login">Please enter your data</h4>
+      </div>
+      <div class="signup_form popup">
+        <h3>Signup</h3>
+        <input
+          id="reg_username"
+          class="get_user_info"
+          type="text"
+          placeholder="Username"
+        />
+        <input
+          id="reg_password"
+          class="get_user_info"
+          type="password"
+          placeholder="Password"
+        />
+        <h4 id="error_msg">Please enter your data</h4>
+        <button id="register_btn">Register</button>
+      </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
